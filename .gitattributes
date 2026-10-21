@@ -1,6 +1,7 @@
 * text=auto eol=lf
 
 *.pt binary
+*.gif binary
 *.png binary
 *.mp4 binary
 *.pdf binary

@@ -66,4 +66,5 @@ dist/
 !/artifacts/qualitative/teacher_roll80_rgb_success.mp4
 !/artifacts/qualitative/teacher_roll80_rgb_success_keyframes.png
 !/artifacts/qualitative/student_roll80_rgb_success.mp4
+!/artifacts/qualitative/student_roll80_rgb_success.gif
 !/artifacts/qualitative/student_roll80_rgb_success_keyframes.png

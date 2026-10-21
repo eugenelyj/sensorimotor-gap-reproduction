@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="artifacts/qualitative/student_roll80_rgb_success_keyframes.png" width="100%" alt="Vision student traversing an 80-degree rolling narrow gap">
+  <img src="artifacts/qualitative/student_roll80_rgb_success.gif" width="100%" alt="Vision student traversing an 80-degree rolling narrow gap">
 </p>
 
 This repository independently reproduces the central **simulation** experiments from
