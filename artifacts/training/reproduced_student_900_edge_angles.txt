@@ -1,0 +1,6 @@
+=== clean ===
+roll=  0.0 success=0.267 (1093/4096) collisions=3003
+roll= 90.0 success=0.265 (1087/4096) collisions=3009
+=== randomized masks ===
+roll=  0.0 success=0.093 (382/4096) collisions=3714
+roll= 90.0 success=0.336 (1377/4096) collisions=2719

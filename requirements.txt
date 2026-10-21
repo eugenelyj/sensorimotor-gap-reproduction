@@ -1,0 +1,7 @@
+imageio>=2.31
+imageio-ffmpeg>=0.4.9
+matplotlib>=3.7
+numpy>=1.26,<2
+PyYAML>=6
+tensorboard>=2.10
+torch>=2.4

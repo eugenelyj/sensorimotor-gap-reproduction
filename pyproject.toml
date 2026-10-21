@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sensorimotor-gap-reproduction"
+version = "0.1.0"
+description = "Reproduction of Precise Aggressive Aerial Maneuvers with Sensorimotor Policies"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["quadrotor", "reinforcement-learning", "robotics", "sim-to-real"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "imageio>=2.31",
+  "imageio-ffmpeg>=0.4.9",
+  "matplotlib>=3.7",
+  "numpy>=1.26,<2",
+  "PyYAML>=6",
+  "tensorboard>=2.10",
+  "torch>=2.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+train-teacher = "sensorimotor.train_teacher:main"
+evaluate-teacher = "sensorimotor.evaluate_teacher:main"
+train-student = "sensorimotor.train_student:main"
+evaluate-student = "sensorimotor.evaluate_student:main"
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2604.05828"
+Data = "https://doi.org/10.5281/zenodo.18005929"
+
+[tool.setuptools.packages.find]
+include = ["sensorimotor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

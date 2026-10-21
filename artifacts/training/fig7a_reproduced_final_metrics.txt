@@ -1,0 +1,16 @@
+with_ir: N=121 RMSE_pp=4.8740 MAE_pp=4.2664
+  target=122880000 step=122880000 reproduced_mean=0.262695 reproduced_std=0.080799 paper_mean=0.142380 paper_std=0.032387 error_pp=12.0315
+  target=303104000 step=303104000 reproduced_mean=0.744385 reproduced_std=0.017812 paper_mean=0.682209 paper_std=0.016411 error_pp=6.2176
+  target=499712000 step=499712000 reproduced_mean=0.873617 reproduced_std=0.011530 paper_mean=0.828208 paper_std=0.037538 error_pp=4.5409
+  target=606208000 step=606208000 reproduced_mean=0.855469 reproduced_std=0.027572 paper_mean=0.866815 paper_std=0.034414 error_pp=-1.1347
+  target=802816000 step=802816000 reproduced_mean=0.967155 reproduced_std=0.009331 paper_mean=0.898154 paper_std=0.026991 error_pp=6.9001
+  target=991232000 step=991232000 reproduced_mean=0.974593 reproduced_std=0.006849 paper_mean=0.960022 paper_std=0.011979 error_pp=1.4571
+  target=999424000 step=991232000 reproduced_mean=0.974593 reproduced_std=0.006849 paper_mean=0.960022 paper_std=0.011979 error_pp=1.4571
+without_ir: N=122 RMSE_pp=3.7818 MAE_pp=2.8788
+  target=122880000 step=122880000 reproduced_mean=0.006917 reproduced_std=0.009269 paper_mean=0.024903 paper_std=0.002185 error_pp=-1.7986
+  target=303104000 step=303104000 reproduced_mean=0.424561 reproduced_std=0.302503 paper_mean=0.367419 paper_std=0.045326 error_pp=5.7142
+  target=499712000 step=499712000 reproduced_mean=0.603027 reproduced_std=0.426405 paper_mean=0.603980 paper_std=0.078184 error_pp=-0.0953
+  target=606208000 step=606208000 reproduced_mean=0.633626 reproduced_std=0.448042 paper_mean=0.612654 paper_std=0.097311 error_pp=2.0972
+  target=802816000 step=802816000 reproduced_mean=0.653809 reproduced_std=0.462312 paper_mean=0.666751 paper_std=0.024984 error_pp=-1.2942
+  target=991232000 step=991232000 reproduced_mean=0.659587 reproduced_std=0.466401 paper_mean=0.658139 paper_std=0.078598 error_pp=0.1448
+  target=999424000 step=999424000 reproduced_mean=0.647461 reproduced_std=0.457893 paper_mean=0.682327 paper_std=0.048395 error_pp=-3.4866

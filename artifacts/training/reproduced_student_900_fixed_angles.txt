@@ -1,0 +1,3 @@
+roll= 30.0 success=0.994 (4071/4096) collisions=25
+roll= 60.0 success=0.984 (4029/4096) collisions=67
+roll= 80.0 success=0.869 (3559/4096) collisions=537

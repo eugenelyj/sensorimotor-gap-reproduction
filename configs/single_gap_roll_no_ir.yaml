@@ -1,0 +1,60 @@
+seed: 1
+device: cuda:0
+
+environment:
+  num_envs: 2048
+  control_dt: 0.016666666666666666
+  episode_seconds: 5.0
+  gap_width: 0.60
+  gap_height: 0.20
+  gap_roll_min_deg: 0.0
+  gap_roll_max_deg: 90.0
+  start_x_range: [-4.5, -2.7]
+  start_lateral_offset: 1.0
+  start_vertical_offset: 0.45
+  collider_size: [0.34, 0.34, 0.11]
+  thrust_min: 6.0
+  thrust_max: 20.0
+  bodyrate_max: 6.0
+  speed_limit: 4.0
+  speed_reward_mode: overspeed_penalty
+  action_penalty_mode: normalized
+  attitude_penalty_mode: paper
+  failure_termination_mode: immediate
+  informed_reset_probability: 0.0
+  informed_trajectory_path: null
+  perturbation_probability: 0.1
+  perturbation_steps: 20
+  perturbation_max_accel: [2.0, 1.0, 1.0]
+  response_randomization: true
+  perturbation_force: true
+  air_drag_linear: [0.08, 0.08, 0.12]
+  air_drag_quadratic: [0.02, 0.02, 0.03]
+  action_delay_steps: [3, 1, 1, 1]
+  action_average_window: 2
+  response_scale_randomization: [0.10, 0.10, 0.10, 0.10]
+  integration_substeps: 2
+
+ppo:
+  rollout_steps: 200
+  total_samples: 1000000000
+  minibatch_size: 100000
+  update_epochs: 5
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coefficient: 0.2
+  entropy_coefficient: 0.001
+  value_coefficient: 0.5
+  actor_learning_rate: 0.0003
+  critic_learning_rate: 0.0005
+  max_grad_norm: 1.5
+  target_kl: 0.03
+  initial_action_log_std: -2.0
+  minimum_action_log_std: -3.175
+  normalizer_freeze_samples: null
+  eval_interval_samples: 8192000
+  checkpoint_interval_samples: 50000000
+  eval_episodes: 4096
+
+logging:
+  run_dir: runs/single_gap_roll_no_ir

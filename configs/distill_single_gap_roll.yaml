@@ -1,0 +1,14 @@
+seed: 2
+device: cuda:0
+teacher_checkpoint: artifacts/teachers/reproduced_teacher_201m.pt
+run_dir: runs/distill_reproduced_teacher_201m
+num_envs: 275
+rollout_steps: 135
+environment_minibatch_size: 25
+learning_epochs: 3
+learning_rate: 0.0002
+max_grad_norm: 3.0
+updates: 1000
+action_loss_weight: 1.0
+termination_loss_weight: 0.2
+checkpoint_interval: 50

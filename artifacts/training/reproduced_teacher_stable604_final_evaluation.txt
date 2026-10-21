@@ -1,0 +1,10 @@
+=== deterministic random angles ===
+roll=random episodes=8192 success=0.983 collisions=143 timeouts=0 out_of_bounds=0 return=3.212
+=== stochastic random angles ===
+roll=random episodes=8192 success=0.982 collisions=145 timeouts=0 out_of_bounds=0 return=2.908
+=== deterministic fixed angles ===
+roll=  0.0 episodes=4096 success=1.000 collisions=0 timeouts=0 out_of_bounds=0 return=3.821
+roll= 30.0 episodes=4096 success=1.000 collisions=0 timeouts=0 out_of_bounds=0 return=3.622
+roll= 60.0 episodes=4096 success=0.999 collisions=6 timeouts=0 out_of_bounds=0 return=3.099
+roll= 80.0 episodes=4096 success=0.956 collisions=182 timeouts=0 out_of_bounds=0 return=2.314
+roll= 90.0 episodes=4096 success=0.728 collisions=1116 timeouts=0 out_of_bounds=0 return=1.518
